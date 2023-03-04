@@ -14,4 +14,8 @@
     <string name="activity_3">Activity 3</string>
     <string name="ignore_this_content">Ignore this content</string>
     <string name="result">Result</string>
+    <string name="welcome_to_activity_3">Welcome to activity 3</string>
+    <string name="ingresa_tu_nikname">Ingresa tu NikName</string>
+    <string name="enviar">Enviar</string>
+    <string name="tvResults_of_Activity_3">El resultado de la informacion de activity 3 será mostrado en este recuador</string>
 </resources>
