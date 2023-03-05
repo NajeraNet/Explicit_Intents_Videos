@@ -16,5 +16,8 @@ public class Activity2 extends AppCompatActivity {
         //
         tvWelcome = findViewById(R.id.tvWelcome);
         //
+        String name = getIntent().getStringExtra("name");
+        //TODO entre welcome y el nombre falta un espacio
+        tvWelcome.setText(getString(R.string.welcome) + name + getString(R.string.to_activity_2));
     }
 }

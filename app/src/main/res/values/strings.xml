@@ -18,4 +18,6 @@
     <string name="ingresa_tu_nikname">Ingresa tu NikName</string>
     <string name="enviar">Enviar</string>
     <string name="tvResults_of_Activity_3">El resultado de la informacion de activity 3 será mostrado en este recuador</string>
+    <string name="welcome">\ Welcome \</string>
+    <string name="to_activity_2">\ to the Activity 2 \</string>
 </resources>

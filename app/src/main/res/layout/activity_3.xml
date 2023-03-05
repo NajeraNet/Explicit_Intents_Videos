@@ -11,15 +11,15 @@
         android:id="@+id/etSurName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
         android:gravity="center_horizontal"
         android:hint="@string/ingresa_tu_nikname"
-        android:ems="10"
         android:inputType=""
-        android:autofillHints="name"
-        android:text="" />
+        android:minHeight="48dp"
+        android:text=""
+        android:textColorHint="#757575" />
 
     <Button
         android:id="@+id/btnEnviarNN"
