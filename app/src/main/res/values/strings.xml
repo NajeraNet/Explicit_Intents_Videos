@@ -20,4 +20,7 @@
     <string name="tvResults_of_Activity_3">El resultado de la informacion de activity 3 será mostrado en este recuador</string>
     <string name="welcome">\ Welcome \</string>
     <string name="to_activity_2">\ to the Activity 2 \</string>
+    <string name="rellena_los_campos">Por favor rellena los campos</string>
+    <string name="no_datos">No se han recibido datos</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

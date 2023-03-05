@@ -1,6 +1,8 @@
 package com.example.explicit_intents_videos;
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etName;
     Button btnAct2, btnAct3;
     TextView tvResults;
+    static int ACTIVITY3 = 3; // este es el valor unico creado para reconocer al activity 3
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //TODO
+                Intent intent = new Intent( MainActivity.this, com.example.explicit_intents_videos.Activity3.class);
+                // aqui podriamos agregar un putExtra(para pasar los datos)
+                startActivityForResult(intent, ACTIVITY3);
             }
         });
+    }
+
+    @Override // verificamos si hay datos traidos desde activity 3
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        // validamos que los datos provengan de activity 3, por su Key code "ACTIVITY3"
+        if (requestCode == ACTIVITY3) {
+            //Si se envia un intent con request code ok obtenemos sus datos
+            if (resultCode == RESULT_OK) {
+                // agregamos los datos que contenga data a nuestro text view results
+                tvResults.setText(data.getStringExtra("surname"));
+            }
+            // si no hay datos avisamos que no ha han enviado datos desde nuestro activity 3
+            if (resultCode == RESULT_CANCELED) {
+                tvResults.setText(R.string.no_datos);
+            }
+        }
     }
 }
