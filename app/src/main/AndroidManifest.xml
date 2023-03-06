@@ -9,6 +9,11 @@
         android:theme="@style/Theme.Explicit_Intents_Videos"
         tools:targetApi="31">
         <activity
+            android:name=".Implicit_Intents"
+            android:exported="false"
+            android:label="@string/title_activity_implicit_intents"
+            android:theme="@style/Theme.Explicit_Intents_Videos.NoActionBar" />
+        <activity
             android:name=".Activity3"
             android:exported="false" />
         <activity

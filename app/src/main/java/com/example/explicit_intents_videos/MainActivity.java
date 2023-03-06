@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnAct2, btnAct3;
     TextView tvResults;
     static int ACTIVITY3 = 3; // este es el valor unico creado para reconocer al activity 3
+    //
+    Button btnImplicitAct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         btnAct2 = findViewById(R.id.btnAct_2);
         btnAct3 = findViewById(R.id.btnAct_3);
         tvResults = findViewById(R.id.tvResults);
-
+        //
+        btnImplicitAct = findViewById(R.id.btnImplicitIntents);
         //
         //Se crea la nueva vista al hacer clic en el boton activity 2
         btnAct2.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +57,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, ACTIVITY3);
             }
         });
+        //Boton que nos lleva a la actividad del Implicit Activities
+        btnImplicitAct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view_implicitIntents) {
+                setContentView(R.layout.activity_implicit_intents);
+                //TODO Crear los implicit intents
+
+            }
+        });
     }
+
 
     @Override // verificamos si hay datos traidos desde activity 3
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

@@ -20,7 +20,7 @@
         android:hint="@string/Introduce_tu_nombre"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="#78909C" />
+        android:textColorHint="#00838F" />
 
     <Button
         android:id="@+id/btnAct_2"
@@ -56,5 +56,14 @@
 
         android:textColorHint="#757575" />
 
+    <Button
+        android:id="@+id/btnImplicitIntents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/implicit_intents" />
 
 </LinearLayout>
