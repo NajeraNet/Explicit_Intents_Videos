@@ -7,7 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment_implicit">Hola y vienvenido a implicit intents, ¿Qué va llevar jóvenazo?</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="Introduce_tu_nombre">Introduce tu nombre</string>
     <string name="activity_2">Activity 2</string>
@@ -20,9 +20,4 @@
     <string name="tvResults_of_Activity_3">El resultado de la informacion de activity 3 será mostrado en este recuador</string>
     <string name="welcome">\ Welcome \</string>
     <string name="to_activity_2">\ to the Activity 2 \</string>
-    <string name="rellena_los_campos">Por favor rellena los campos</string>
-    <string name="no_datos">No se han recibido datos</string>
-    <string name="cancelar">Cancelar</string>
-    <string name="title_activity_implicit_intents">Implicit_Intents</string>
-    <string name="implicit_intents">Implicit Intents</string>
 </resources>
